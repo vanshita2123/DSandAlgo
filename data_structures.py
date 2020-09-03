@@ -32,7 +32,7 @@ class LinkedList():
         new_node = Node(data)
         i = 0
         temp = self.head
-        if index >= self.lenth:
+        if index >= self.length:
             self.append(data)
             return
         if index == 0:
@@ -65,21 +65,23 @@ class LinkedList():
             i += 1
             temp = temp.next
 
-        def printl(self):
-            temp = self.head
-            while temp != None:
-                print(temp.data, end='')
-                temp = temo.next
-            print()
-            print('Length=' + str(self.length))
+    def printl(self):
+        temp = self.head
+        while temp != None:
+            print(temp.data, end='')
+            temp = temp.next
+        print()
+        print('Length=' + str(self.length))
 
-        def reverse(self):
-            prev = None
-            self.tail = self.head
-            while self.head != None:
-                temp = self.head
-                self.head = self.head.next
-                self.head = temp
+    def reverse(self):
+        prev = None
+        self.tail = self.head
+        while self.head != None:
+            temp = self.head
+            self.head = self.head.next
+            temp.next = prev
+            prev = temp
+            self.head = temp
 
 
 l = LinkedList()
