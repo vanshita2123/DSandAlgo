@@ -163,5 +163,10 @@ class DoublyLinkedList:
     def printt(self):
         temp = self.head
         while temp!=None:
-            print
+            print(temp.data, end = ' ')
+            temp = temp.next
+        print()
+        print('Length ' +str(self.length))
+
+d = 
 
