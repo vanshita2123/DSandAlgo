@@ -1,3 +1,5 @@
+'''
+
 class Node:
 
     def __init__(self, data):
@@ -72,9 +74,9 @@ class LinkedList:
             print(temp.data, end='')
             temp = temp.next
         print()
-        print('Length=' + str(self.length))
+        print('Length=' + str(self.length))'''
 
-    '''
+'''
     def reverse(self):
         prev = None
         self.tail = self.head
@@ -84,7 +86,7 @@ class LinkedList:
             temp.next = prev
             prev = temp
             self.head = temp'''
-
+'''
 
 l = LinkedList()
 l.append(10)
@@ -97,7 +99,7 @@ l.remove(5)
 #l.reverse()
 l.printl()
 print(l.head.data, l.tail.data)
-
+'''
 # Doubly linked lists
 class Node:
     def __init__(self,data):
@@ -168,5 +170,7 @@ class DoublyLinkedList:
         print()
         print('Length ' +str(self.length))
 
-d = 
+d = DoublyLinkedList()
+d.append(10)
+d.printt()
 
