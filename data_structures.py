@@ -172,5 +172,10 @@ class DoublyLinkedList:
 
 d = DoublyLinkedList()
 d.append(10)
+d.append(5)
+d.append(6)
+d.prepend(1)
+d.insert(2,22)
+d.remove(3)
 d.printt()
 
