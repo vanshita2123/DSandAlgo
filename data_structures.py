@@ -205,5 +205,25 @@ class Stack:
             new_node.next = self.top
             self.top = new_node
             self.length+=1
-            
+
+    def pop(self):
+        if not self.top:
+            return None
+        holderPointer = self.top
+        self.top=self.top.next
+        self.length-=1
+        if self.length==0:
+            self.bottom = None
+        return holderPointer.data
+
+    def printt(self):
+        temp = self.top
+        while temp!=None:
+            print(temp.data, end=" --> ")
+            temp = temp.next
+        print()
+
+mystack = Stack()
+
+
 
