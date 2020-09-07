@@ -179,3 +179,31 @@ d.insert(2,22)
 d.remove(3)
 d.printt()
 
+# Stacks and Queues
+class Node:
+    def __init__(self,data):
+        self.data = data
+        self.next = None
+
+class Stack:
+    def __init__(self):
+        self.top = None
+        self.bottom = None
+        self.length = 0
+
+    def peek(self):
+        return self.top.data
+
+    def push(self,data):
+        new_node = Node(data)
+        if self.bottom == None:
+            self.bottom = new_node
+            self.top = new_node
+            self.top = self.bottom
+            self.length = 1
+        else:
+            new_node.next = self.top
+            self.top = new_node
+            self.length+=1
+            
+
