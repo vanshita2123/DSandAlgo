@@ -224,6 +224,17 @@ class Stack:
         print()
 
 mystack = Stack()
-
+mystack.push('google')
+mystack.push('microsoft')
+mystack.push('facebook')
+mystack.push('apple')
+mystack.printt()
+x = mystack.peek()
+print(x)
+y = mystack.pop()
+print(y)
+mystack.printt()
+qw = mystack.peek()
+print(qw)
 
 
