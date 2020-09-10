@@ -68,6 +68,6 @@ class BinarySearchTree:
                 # Option 2: Right child which does not have the left child
                 elif(curr_node.right.left == None):
                     curr_node.right.left =  curr_node.left
-                    
+
 
 
