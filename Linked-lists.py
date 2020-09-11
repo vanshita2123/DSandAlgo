@@ -41,7 +41,8 @@ class LinkedList:
             return
         while i < self.length:
             if i == index - 1:
-                temp.next, new_node.next = new_node, temp.next
+                temp.next = new_node
+                new_node.next = temp.next
                 self.length += 1
                 break
             temp = temp.next
