@@ -84,6 +84,17 @@ class LinkedList:
         print()
         print('Length=' + str(self.length))
 
+# To get the value at a given index
+    def getNth(head, k):
+        temp = head
+        index = 0
+        while (temp):
+            if (index == k - 1):
+                return temp.data
+            index += 1
+            temp = temp.next
+
+
 '''
     def reverse(self):
         prev = None
