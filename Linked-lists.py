@@ -87,12 +87,35 @@ class LinkedList:
 # To get the value at a given index
     def getNth(head, k):
         temp = head
-        index = 0
+        i = 0
         while (temp):
-            if (index == k - 1):
+            if (i == k - 1):
                 return temp.data
-            index += 1
+            i += 1
             temp = temp.next
+
+# To find the data at the middle index of the linked list
+    def findMid(head):
+        temp = head
+        count = 0
+        i = 0
+        while (temp):
+            count += 1
+            temp = temp.next
+        if (count % 2 == 0):
+            temp = head
+            while (temp):
+                if (i == count / 2):
+                    return temp.data
+                temp = temp.next
+                i += 1
+        if (count % 2 != 0):
+            temp = head
+            while (temp):
+                if (i == count // 2):
+                    return temp.data
+                temp = temp.next
+                i += 1
 
 
 '''
