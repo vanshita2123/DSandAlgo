@@ -67,6 +67,15 @@ class LinkedList:
             i += 1
             temp = temp.next
 
+# When given reference to head node,
+    def getCount(self):
+        temp = self.head
+        count = 0
+        while (temp):
+            count += 1
+            temp = temp.next
+        return count
+
     def printl(self):
         temp = self.head
         while temp != None:
