@@ -116,6 +116,27 @@ class LinkedList:
                     return temp.data
                 temp = temp.next
                 i += 1
+# function inserts data x in front of list and returns new head
+    def insertAtBegining(head,x):
+        new_node = Node(x)
+        if head == None:
+            head = new_node
+        else:
+            new_node.next = head
+            head = new_node
+        return head
+
+# function appends data x at the end of list and returns new head
+    def insertAtEnd(head,x):
+        new_node = Node(x)
+        if head == None:
+            head = new_node
+        else:
+            ptr = head
+            while ptr.next:
+                ptr = ptr.next
+            ptr.next = new_node
+        return head
 
 
 '''

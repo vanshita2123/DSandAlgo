@@ -56,6 +56,8 @@ print(y)
 mystack.printt()
 qw = mystack.peek()
 print(qw)
+
+
 # Stacks using arrays
 class Stack:
     def __init__(self):
