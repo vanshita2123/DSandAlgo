@@ -6,6 +6,8 @@ def fact(num):
         result = result * i
     return result
 
+# Recursive
+
 def factorial(number):
     if number == 1:
         return 1
