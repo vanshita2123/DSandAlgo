@@ -1,5 +1,6 @@
 # Factorial of a number
 # Iterative
+'''
 def fact(num):
     result = 1
     for i in range(1, num+1):
@@ -47,3 +48,24 @@ def reverse(word):
     return reverse(word[0:size-1])
 
 reverse("hello world")
+'''
+
+
+def nextHappy(N):
+    i = 0
+    sum = 0
+    p = N + 1
+    k = p
+    if p < 10:
+        p = 10
+    while (p % 10 != 0):
+        r = p % 10
+        sum = sum + r ** 2
+        p = p // 10
+    if (sum == 1):
+        return k
+
+    return nextHappy(N + 1)
+
+
+print(nextHappy(8))
