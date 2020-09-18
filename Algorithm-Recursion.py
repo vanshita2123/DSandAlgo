@@ -1,6 +1,6 @@
 # Factorial of a number
 # Iterative
-'''
+
 def fact(num):
     result = 1
     for i in range(1, num+1):
@@ -48,7 +48,7 @@ def reverse(word):
     return reverse(word[0:size-1])
 
 reverse("hello world")
-'''
+
 
 
 def nextHappy(N):
