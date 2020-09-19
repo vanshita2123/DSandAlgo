@@ -1,3 +1,5 @@
+# most popular type of sorting. But the pivot must be chosen wisely as max or min pivot can lead to O(n^2)
+
 def quicksort(array, left, right):
     length = len(array)
     if left < right:

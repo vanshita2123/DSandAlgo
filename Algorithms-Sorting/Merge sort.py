@@ -1,3 +1,5 @@
+# if you're worried about worst case complexity, you should use merge sort but its space complexty is high
+
 def merge_sort(arr):
     if len(arr) == 1:
         return arr

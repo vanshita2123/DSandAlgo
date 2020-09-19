@@ -1,3 +1,5 @@
+# rarely used as time complexity and space complexity is too high
+
 def selection_sort(arr):
      i = 0
      while i < len(arr):

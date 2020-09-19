@@ -1,3 +1,5 @@
+# use when only a few numbers and almost sorted data is given
+
 def insertion_sort(arr):
     length = len(arr)
     i = 1

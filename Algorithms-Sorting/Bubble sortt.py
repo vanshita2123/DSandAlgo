@@ -1,3 +1,5 @@
+# rarely used in real life examples
+
 def bubble_sort(arr):
     s = len(arr)
     for i in range(s):
