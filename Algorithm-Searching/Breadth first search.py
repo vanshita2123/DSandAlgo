@@ -68,7 +68,7 @@ class BinarySearchTree:
         if curr_node.right:
             queue.append(curr_node.right)
 
-        return self.recursivebfs()
+        return self.recursivebfs(queue, mylist)
 
 tree = BinarySearchTree()
 tree.insert(9)
