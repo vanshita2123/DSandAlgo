@@ -15,4 +15,3 @@ def selection_sort(arr):
 
 a = [32, 84, 30, 21, 4, 90, 65, 47, 1, 36, 77]
 print(selection_sort(a))
-
